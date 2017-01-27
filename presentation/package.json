@@ -1,0 +1,9 @@
+{
+  "name": "books-paris-presentation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "reveal": "0.0.4"
+  },
+  "scripts": {}
+}
