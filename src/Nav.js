@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+import logo from './logo.svg'; // on peut importer toutes images, CSS de cette manière
+import './nav.css';
 
 class Nav extends Component {
   render() {
@@ -7,7 +10,10 @@ class Nav extends Component {
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
-      <a className="navbar-brand" href="#">Top 10 des livres les plus empruntés dans les bibliothèques parisienne en 2016</a>
+      <Link className="navbar-brand" to={`/`}>
+        <img src={logo} alt="bam" />
+        Top 10 des livres les plus empruntés dans les bibliothèques parisienne en 2016
+      </Link>
     </nav>
     );
   }
