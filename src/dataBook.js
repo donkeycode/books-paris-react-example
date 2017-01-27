@@ -1,4 +1,4 @@
-import { getAll as fetchBooks, getOne as fetchBook } from './fetchBook';
+import { fetchBooks, fetchBook } from './bookService';
 
 const initState = {
   bookList: [],
@@ -6,7 +6,7 @@ const initState = {
   loader: false
 };
 
-export default function dataBook(state = initState, action) {
+export function dataBook(state = initState, action) {
   switch (action.type) {
     case 'LOAD_START':
       return {

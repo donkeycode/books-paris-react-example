@@ -1,29 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Book from './Book';
-import fetchBook from './fetchBook';
-import { selectBook, getBooks } from './dataBook';
+import { getBooks } from './dataBook';
 
 class BookList extends Component {
-  constructor(props) {
-    super(props);
-
-    // this.state = {
-    //   records: [],
-    //   page: 0
-    // }
-  }
+  // constructor(props) {
+  //   super(props);
+  //
+  //   // this.state = {
+  //   //   records: [],
+  //   //   page: 0
+  //   // }
+  // }
   componentDidMount() {
-    console.log("load data function");
-
-    this.props.getBooks(); //dispatch(getBooks());
-
-    // fetchBook(0)
-    //   .then(json => {
-    //     console.log(json);
-    //     this.setState({ records: json.records })
-    //   }
-    // );
+    this.props.getBooks();
   }
   render() {
     return (

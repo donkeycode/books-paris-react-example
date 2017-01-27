@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; // Pour application mobile => ReactNative
+import ReactDOM from 'react-dom'; // Pour application mobile => ReactNative + loader wekpack qui transform CSS
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -10,8 +10,9 @@ import NoMatch from './NoMatch';
 
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import dataBook from './dataBook';
+import thunk from 'redux-thunk'; // Pour appel associer redux et ajax
+import { dataBook } from './dataBook';
+
 let store = createStore(dataBook, applyMiddleware(thunk))
 
 // Execute le component App - dans ID root (cf public/index.html)

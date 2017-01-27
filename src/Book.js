@@ -19,11 +19,3 @@ class Book extends Component {
 }
 
 export default Book;
-
-// export default function (props) {
-//   return (
-//     <div className="Book">
-//       { props.book.fields.titre }
-//     </div>
-//   );
-// };

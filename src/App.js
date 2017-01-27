@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg'; // on peut importer toutes images de cette manière
-import './App.css'; // CSS importé automatiquement (webpack)
-// import Book from './Book';
 import Nav from './Nav';
+import './app.css'; // CSS importé automatiquement (webpack)
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">{/* className => class css */}
+      <div className="App">
         <Nav />
         <div className="container">
           {this.props.children }
         </div>
-        {/* Aussi - Exemple brut de pomme */}
-        {/* <ul> { this.state.records.map( book =>  <li>{book.fields.titre}</li> ) } </ul>*/}
       </div>
     );
   }
