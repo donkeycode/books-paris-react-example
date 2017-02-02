@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Renard from './Renard';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Coucou Renard !</h2>
         </div>
+        <Renard />
         <p className="App-intro">
           L'application se lance, nous sommes contents.
         </p>
